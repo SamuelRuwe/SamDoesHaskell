@@ -54,19 +54,3 @@ append_ (Structure a) (Structure b) =
 el :: String -> String -> String
 el tag content =
   "<" <> tag <> ">" <> content <> "</" <> tag <> ">"
-
--- Embedded Domain Specific Language
--- Domain Specific Language: specialized language for specific domain such as CSS or HTML
--- Embedded DSL: DSL language embedded in another programming language that produces a valid DSL language
--- Combinator Pattern
--- Define primitives and combinators
--- Primitives - basic building blocks of language
--- Combinators - functions that combine the primitives
-
--- <> is string concatenation operator
--- <> has right fixity. Ex "a" <> "b" <> "c" === "a" <> ("b" <> "c")
--- -> is right associative. ex: String -> String -> String === String -> (String -> String)
--- -- three = (\num1 -> \num2 -> num1 + num2) 1 2
--- -- -> marks start of function body
--- three :: Int -> Int -> Int
--- three = (\num1 num2 -> num1 + num2)
