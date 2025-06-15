@@ -1,0 +1,3 @@
+map is just fmap that only works on lists
+
+Types that act like a box can be functors
